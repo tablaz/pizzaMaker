@@ -14,38 +14,26 @@ class TamanoVC: UIViewController {
     
     let step: Float = 1
     @IBOutlet weak var tamanoSlider: UISlider!
-    @IBOutlet weak var pizzaImage: UIImageView!
     @IBOutlet weak var tamanoLabel: UILabel!
-    
 
-
-    @IBAction func tamanoSelection(sender: AnyObject) {
-         let roundedValue = round(sender.value / step) * step
-         tamanoSlider.value = roundedValue
+    @IBAction func tamanoSelection(sender: UISlider) {
+        let roundedValue = round(sender.value / step) * step
+        tamanoSlider.value = roundedValue
         
         var tamano : TamanoEnu
-        var increment : Float = 1;
         switch tamanoSlider.value {
         case 1:
-            increment = 1;
             tamano = .Chica
         case 2:
-            increment = 1.3;
             tamano = .Mediana
         case 3:
-            increment = 1.6;
             tamano = .Grande
         default :
-            increment = 1;
             tamano = .Chica
         }
         
         self.tamanoLabel.text = tamano.rawValue
 
-        appDelegate.nuevapizza.tamano = tamano
-        
-        pizzaImage.transform = CGAffineTransformMakeScale(CGFloat(increment), CGFloat(increment));
-        
     }
     
     override func viewDidLoad() {

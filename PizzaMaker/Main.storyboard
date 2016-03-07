@@ -22,10 +22,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="9Ax-AR-wHr">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza-1" translatesAutoresizingMaskIntoConstraints="NO" id="ufF-eh-laS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza_grande" translatesAutoresizingMaskIntoConstraints="NO" id="ufF-eh-laS">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="109" y="109" width="183" height="181"/>
+                                    <rect key="frame" x="10" y="51" width="380" height="274"/>
                                 </variation>
                             </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="4WR-DF-Elw">
@@ -34,7 +34,7 @@
                                     <rect key="frame" x="18" y="398" width="364" height="31"/>
                                 </variation>
                                 <connections>
-                                    <action selector="tamanoSelection:" destination="9pv-A4-QxB" eventType="valueChanged" id="S9a-0h-wj3"/>
+                                    <action selector="tamanoSelection:" destination="9pv-A4-QxB" eventType="valueChanged" id="Mc3-FH-gJK"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mediana" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnC-C4-jlo">
@@ -43,16 +43,16 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="69" y="445" width="263" height="21"/>
+                                    <rect key="frame" x="69" y="445" width="263" height="35"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escoje un tamaño de Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGE-WK-1rb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escoje un tamaño de Pizza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGE-WK-1rb">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="20" width="360" height="25"/>
+                                    <rect key="frame" x="20" y="348" width="360" height="25"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -96,9 +96,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Tamaño" image="pizza" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="pizzaImage" destination="ufF-eh-laS" id="aS9-Ox-363"/>
-                        <outlet property="tamanoLabel" destination="PnC-C4-jlo" id="h24-Or-UHj"/>
-                        <outlet property="tamanoSlider" destination="4WR-DF-Elw" id="wkv-Z5-qXj"/>
+                        <outlet property="tamanoLabel" destination="PnC-C4-jlo" id="did-HN-pq5"/>
+                        <outlet property="tamanoSlider" destination="4WR-DF-Elw" id="Ti4-ve-qPd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -120,13 +119,46 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Bu6-pP-bY7">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Que masa te gusta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3g-NO-mOm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3g-NO-mOm">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="20" width="360" height="25"/>
+                                    <rect key="frame" x="20" y="45" width="360" height="0.0"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="masa_pizza" translatesAutoresizingMaskIntoConstraints="NO" id="1gG-yz-ODv">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="10" y="53" width="380" height="274"/>
+                                </variation>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="J7r-Bi-OZX">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="18" y="401" width="364" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="tamanoSelection:" destination="9pv-A4-QxB" eventType="valueChanged" id="SZi-6A-ccc"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delgada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAc-SK-BeF">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="69" y="445" width="263" height="35"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Que masa te gusta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIy-1f-zaE">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="114" y="352" width="173" height="25"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -141,6 +173,10 @@
                             <mask key="subviews">
                                 <exclude reference="Bu6-pP-bY7"/>
                                 <exclude reference="g3g-NO-mOm"/>
+                                <exclude reference="1gG-yz-ODv"/>
+                                <exclude reference="J7r-Bi-OZX"/>
+                                <exclude reference="WAc-SK-BeF"/>
+                                <exclude reference="WIy-1f-zaE"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="bPi-If-wVr"/>
@@ -153,6 +189,10 @@
                             <mask key="subviews">
                                 <include reference="Bu6-pP-bY7"/>
                                 <include reference="g3g-NO-mOm"/>
+                                <include reference="1gG-yz-ODv"/>
+                                <include reference="J7r-Bi-OZX"/>
+                                <include reference="WAc-SK-BeF"/>
+                                <include reference="WIy-1f-zaE"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="bPi-If-wVr"/>
@@ -246,13 +286,80 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Vri-iz-s2N">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agregale otros ingredientes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSG-Ly-pSc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="otros" translatesAutoresizingMaskIntoConstraints="NO" id="TR3-TC-doY">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="10" y="51" width="380" height="274"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agregale otros ingredientes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSG-Ly-pSc">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="20" width="360" height="25"/>
+                                    <rect key="frame" x="20" y="344" width="360" height="25"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7V-96-V8l">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="421" width="74" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDf-bn-tGp">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="458" width="74" height="21"/>
+                                </variation>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5tl-Ug-Jgi">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <color key="onTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="102" y="378" width="51" height="31"/>
+                                </variation>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BJw-PK-4Ck">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="102" y="416" width="51" height="31"/>
+                                </variation>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YJv-4F-Apo">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="102" y="453" width="51" height="31"/>
+                                </variation>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y37-ae-cuh">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="102" y="492" width="51" height="31"/>
+                                </variation>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lj-Bu-OWX">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="383" width="74" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PC2-le-2kc">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="497" width="74" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -266,7 +373,16 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Vri-iz-s2N"/>
+                                <exclude reference="TR3-TC-doY"/>
                                 <exclude reference="mSG-Ly-pSc"/>
+                                <exclude reference="f7V-96-V8l"/>
+                                <exclude reference="aDf-bn-tGp"/>
+                                <exclude reference="5tl-Ug-Jgi"/>
+                                <exclude reference="BJw-PK-4Ck"/>
+                                <exclude reference="YJv-4F-Apo"/>
+                                <exclude reference="Y37-ae-cuh"/>
+                                <exclude reference="7lj-Bu-OWX"/>
+                                <exclude reference="PC2-le-2kc"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="5rW-ib-crk"/>
@@ -278,7 +394,16 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Vri-iz-s2N"/>
+                                <include reference="TR3-TC-doY"/>
                                 <include reference="mSG-Ly-pSc"/>
+                                <include reference="f7V-96-V8l"/>
+                                <include reference="aDf-bn-tGp"/>
+                                <include reference="5tl-Ug-Jgi"/>
+                                <include reference="BJw-PK-4Ck"/>
+                                <include reference="YJv-4F-Apo"/>
+                                <include reference="Y37-ae-cuh"/>
+                                <include reference="7lj-Bu-OWX"/>
+                                <include reference="PC2-le-2kc"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="5rW-ib-crk"/>
@@ -309,13 +434,37 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="pL0-eM-u7U">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Que queso le ponemos?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrw-u4-NUg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="queso_dados" translatesAutoresizingMaskIntoConstraints="NO" id="EIb-Z0-f2r">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="10" y="53" width="380" height="274"/>
+                                </variation>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="gjh-P7-GzN">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="18" y="402" width="364" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="tamanoSelection:" destination="9pv-A4-QxB" eventType="valueChanged" id="hDI-HQ-Tmj"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mozarela" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRJ-Ab-Qd5">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="69" y="445" width="263" height="35"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Que queso le ponemos?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4Y-1s-uBe">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="20" width="360" height="25"/>
+                                    <rect key="frame" x="95" y="352" width="210" height="25"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -329,7 +478,10 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="pL0-eM-u7U"/>
-                                <exclude reference="Mrw-u4-NUg"/>
+                                <exclude reference="EIb-Z0-f2r"/>
+                                <exclude reference="gjh-P7-GzN"/>
+                                <exclude reference="nRJ-Ab-Qd5"/>
+                                <exclude reference="o4Y-1s-uBe"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="EGJ-xe-GYN"/>
@@ -341,7 +493,10 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="pL0-eM-u7U"/>
-                                <include reference="Mrw-u4-NUg"/>
+                                <include reference="EIb-Z0-f2r"/>
+                                <include reference="gjh-P7-GzN"/>
+                                <include reference="nRJ-Ab-Qd5"/>
+                                <include reference="o4Y-1s-uBe"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="EGJ-xe-GYN"/>
@@ -386,8 +541,11 @@
         <image name="cocina" width="32" height="32"/>
         <image name="ingredientes" width="32" height="32"/>
         <image name="masa" width="32" height="32"/>
+        <image name="masa_pizza" width="355" height="260"/>
+        <image name="otros" width="355" height="259"/>
         <image name="pizza" width="32" height="32"/>
-        <image name="pizza-1" width="1024" height="1024"/>
+        <image name="pizza_grande" width="355" height="260"/>
         <image name="queso" width="32" height="32"/>
+        <image name="queso_dados" width="355" height="260"/>
     </resources>
 </document>
