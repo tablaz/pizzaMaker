@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tamaño-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="TamanoVC" customModule="PizzaMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="9Ax-AR-wHr">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza-1" translatesAutoresizingMaskIntoConstraints="NO" id="ufF-eh-laS">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="109" y="109" width="183" height="181"/>
+                                </variation>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="4WR-DF-Elw">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="18" y="398" width="364" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="tamanoSelection:" destination="9pv-A4-QxB" eventType="valueChanged" id="S9a-0h-wj3"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mediana" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnC-C4-jlo">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="69" y="445" width="263" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escoje un tamaño de Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGE-WK-1rb">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="20" width="360" height="25"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Ax-AR-wHr" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" id="CiS-c8-ipI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Ax-AR-wHr" secondAttribute="trailing" constant="-20" id="hTy-y3-9v4"/>
+                            <constraint firstItem="9Ax-AR-wHr" firstAttribute="bottom" secondItem="tsR-hK-woN" secondAttribute="bottomMargin" id="jKz-YX-nl3"/>
+                            <constraint firstItem="9Ax-AR-wHr" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-20" id="u3s-h9-Agj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="9Ax-AR-wHr"/>
+                                <exclude reference="ufF-eh-laS"/>
+                                <exclude reference="4WR-DF-Elw"/>
+                                <exclude reference="PnC-C4-jlo"/>
+                                <exclude reference="dGE-WK-1rb"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="CiS-c8-ipI"/>
+                                <exclude reference="hTy-y3-9v4"/>
+                                <exclude reference="jKz-YX-nl3"/>
+                                <exclude reference="u3s-h9-Agj"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="9Ax-AR-wHr"/>
+                                <include reference="ufF-eh-laS"/>
+                                <include reference="4WR-DF-Elw"/>
+                                <include reference="PnC-C4-jlo"/>
+                                <include reference="dGE-WK-1rb"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="CiS-c8-ipI"/>
+                                <include reference="hTy-y3-9v4"/>
+                                <include reference="jKz-YX-nl3"/>
+                                <include reference="u3s-h9-Agj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tamaño" image="pizza" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="pizzaImage" destination="ufF-eh-laS" id="aS9-Ox-363"/>
+                        <outlet property="tamanoLabel" destination="PnC-C4-jlo" id="h24-Or-UHj"/>
+                        <outlet property="tamanoSlider" destination="4WR-DF-Elw" id="wkv-Z5-qXj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-66" y="-304"/>
+        </scene>
+        <!--Masa-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="MasaVC" customModule="PizzaMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Bu6-pP-bY7">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Que masa te gusta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3g-NO-mOm">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="20" width="360" height="25"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bu6-pP-bY7" firstAttribute="bottom" secondItem="QS5-Rx-YEW" secondAttribute="bottomMargin" id="bPi-If-wVr"/>
+                            <constraint firstItem="Bu6-pP-bY7" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" id="j7E-GR-sg9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bu6-pP-bY7" secondAttribute="trailing" constant="-20" id="qnk-Kb-MDQ"/>
+                            <constraint firstItem="Bu6-pP-bY7" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-20" id="xw8-j9-gps"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Bu6-pP-bY7"/>
+                                <exclude reference="g3g-NO-mOm"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="bPi-If-wVr"/>
+                                <exclude reference="j7E-GR-sg9"/>
+                                <exclude reference="qnk-Kb-MDQ"/>
+                                <exclude reference="xw8-j9-gps"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Bu6-pP-bY7"/>
+                                <include reference="g3g-NO-mOm"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="bPi-If-wVr"/>
+                                <include reference="j7E-GR-sg9"/>
+                                <include reference="qnk-Kb-MDQ"/>
+                                <include reference="xw8-j9-gps"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Masa" image="masa" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="676.5" y="-304"/>
+        </scene>
+        <!--A Cocina-->
+        <scene sceneID="4Z5-xB-Mwv">
+            <objects>
+                <viewController id="p01-xI-FQQ" customClass="HornoVC" customModule="PizzaMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EUU-4y-2Zz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Akv-ic-bkg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="34P-ZU-eLJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="yks-fj-6y8">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esta es la Pizza que va al horno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIx-m2-Klo">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="20" width="360" height="25"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="yks-fj-6y8" secondAttribute="trailing" constant="-20" id="CSk-Rh-yCH"/>
+                            <constraint firstItem="yks-fj-6y8" firstAttribute="leading" secondItem="34P-ZU-eLJ" secondAttribute="leadingMargin" constant="-20" id="K3x-ay-9nK"/>
+                            <constraint firstItem="yks-fj-6y8" firstAttribute="bottom" secondItem="34P-ZU-eLJ" secondAttribute="bottomMargin" id="kHP-aA-fQE"/>
+                            <constraint firstItem="yks-fj-6y8" firstAttribute="top" secondItem="34P-ZU-eLJ" secondAttribute="topMargin" id="pOa-ha-YmG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="yks-fj-6y8"/>
+                                <exclude reference="gIx-m2-Klo"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="CSk-Rh-yCH"/>
+                                <exclude reference="K3x-ay-9nK"/>
+                                <exclude reference="kHP-aA-fQE"/>
+                                <exclude reference="pOa-ha-YmG"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="yks-fj-6y8"/>
+                                <include reference="gIx-m2-Klo"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="CSk-Rh-yCH"/>
+                                <include reference="K3x-ay-9nK"/>
+                                <include reference="kHP-aA-fQE"/>
+                                <include reference="pOa-ha-YmG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="A Cocina" image="cocina" id="MLL-Xx-8vL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPb-bQ-9jn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="646" y="439"/>
+        </scene>
+        <!--Otros-->
+        <scene sceneID="LuA-jz-kpj">
+            <objects>
+                <viewController id="mo2-K5-NDj" customClass="OtrosVC" customModule="PizzaMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fil-Fe-uJP"/>
+                        <viewControllerLayoutGuide type="bottom" id="nbQ-nD-nm6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x7m-Hi-l4Q">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Vri-iz-s2N">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agregale otros ingredientes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSG-Ly-pSc">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="20" width="360" height="25"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vri-iz-s2N" firstAttribute="leading" secondItem="x7m-Hi-l4Q" secondAttribute="leadingMargin" constant="-20" id="5rW-ib-crk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vri-iz-s2N" secondAttribute="trailing" constant="-20" id="FE8-JH-zb6"/>
+                            <constraint firstItem="Vri-iz-s2N" firstAttribute="bottom" secondItem="x7m-Hi-l4Q" secondAttribute="bottomMargin" id="XI3-Lw-2Ay"/>
+                            <constraint firstItem="Vri-iz-s2N" firstAttribute="top" secondItem="x7m-Hi-l4Q" secondAttribute="topMargin" id="lcr-tr-fgU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Vri-iz-s2N"/>
+                                <exclude reference="mSG-Ly-pSc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5rW-ib-crk"/>
+                                <exclude reference="FE8-JH-zb6"/>
+                                <exclude reference="XI3-Lw-2Ay"/>
+                                <exclude reference="lcr-tr-fgU"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Vri-iz-s2N"/>
+                                <include reference="mSG-Ly-pSc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="5rW-ib-crk"/>
+                                <include reference="FE8-JH-zb6"/>
+                                <include reference="XI3-Lw-2Ay"/>
+                                <include reference="lcr-tr-fgU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Otros" image="ingredientes" id="0fW-yL-saM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0uq-A9-w7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-66" y="439"/>
+        </scene>
+        <!--Queso-->
+        <scene sceneID="tuX-Hz-0Bc">
+            <objects>
+                <viewController id="i7Q-JC-zVR" customClass="QuesoVC" customModule="PizzaMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c7h-wm-6Ha"/>
+                        <viewControllerLayoutGuide type="bottom" id="xfG-IX-GdC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fCk-xf-zeL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="pL0-eM-u7U">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Que queso le ponemos?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrw-u4-NUg">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="20" width="360" height="25"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pL0-eM-u7U" firstAttribute="top" secondItem="fCk-xf-zeL" secondAttribute="topMargin" id="EGJ-xe-GYN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pL0-eM-u7U" secondAttribute="trailing" constant="-20" id="lpF-9J-be3"/>
+                            <constraint firstItem="pL0-eM-u7U" firstAttribute="leading" secondItem="fCk-xf-zeL" secondAttribute="leadingMargin" constant="-20" id="o8I-R5-XTg"/>
+                            <constraint firstItem="pL0-eM-u7U" firstAttribute="bottom" secondItem="fCk-xf-zeL" secondAttribute="bottomMargin" id="t2Y-jk-Wcg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="pL0-eM-u7U"/>
+                                <exclude reference="Mrw-u4-NUg"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="EGJ-xe-GYN"/>
+                                <exclude reference="lpF-9J-be3"/>
+                                <exclude reference="o8I-R5-XTg"/>
+                                <exclude reference="t2Y-jk-Wcg"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="pL0-eM-u7U"/>
+                                <include reference="Mrw-u4-NUg"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="EGJ-xe-GYN"/>
+                                <include reference="lpF-9J-be3"/>
+                                <include reference="o8I-R5-XTg"/>
+                                <include reference="t2Y-jk-Wcg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Queso" image="queso" id="FwG-Y0-Ga8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nu7-2S-x5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1306" y="-304"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="tintColor" red="0.99607843139999996" green="0.30588235289999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="i7Q-JC-zVR" kind="relationship" relationship="viewControllers" id="pyf-vh-Udy"/>
+                        <segue destination="mo2-K5-NDj" kind="relationship" relationship="viewControllers" id="OWu-xf-6yU"/>
+                        <segue destination="p01-xI-FQQ" kind="relationship" relationship="viewControllers" id="uhp-e1-1Wm"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-804" y="-304"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="375" height="667"/>
+        <image name="cocina" width="32" height="32"/>
+        <image name="ingredientes" width="32" height="32"/>
+        <image name="masa" width="32" height="32"/>
+        <image name="pizza" width="32" height="32"/>
+        <image name="pizza-1" width="1024" height="1024"/>
+        <image name="queso" width="32" height="32"/>
+    </resources>
+</document>
