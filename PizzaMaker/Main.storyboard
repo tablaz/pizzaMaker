@@ -352,6 +352,28 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza_roja" translatesAutoresizingMaskIntoConstraints="NO" id="YAA-hc-Tt5">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tamaño:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3y-hD-YII">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="38d-08-wKV"/>
+                                    <constraint firstAttribute="height" constant="21" id="Kj2-Yb-XPa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="38d-08-wKV"/>
+                                        <exclude reference="Kj2-Yb-XPa"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="38d-08-wKV"/>
+                                        <include reference="Kj2-Yb-XPa"/>
+                                    </mask>
+                                </variation>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tamaño" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWH-Bm-ttN">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
@@ -414,72 +436,6 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puedes agregar + ingredientes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWb-TZ-dGj">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="py6-M2-2jq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
-                                <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="py6-M2-2jq"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="py6-M2-2jq"/>
-                                    </mask>
-                                </variation>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" text="No has agregado mas ingredeintes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tbh-RS-t1w">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ingredientes_roja" translatesAutoresizingMaskIntoConstraints="NO" id="iNu-pM-Grp">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowCall" translatesAutoresizingMaskIntoConstraints="NO" id="rSK-xW-8mN">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="SVC-oJ-slh"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="SVC-oJ-slh"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="SVC-oJ-slh"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tamaño:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3y-hD-YII">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="91" id="38d-08-wKV"/>
-                                    <constraint firstAttribute="height" constant="21" id="Kj2-Yb-XPa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <color key="textColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="38d-08-wKV"/>
-                                        <exclude reference="Kj2-Yb-XPa"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="38d-08-wKV"/>
-                                        <include reference="Kj2-Yb-XPa"/>
-                                    </mask>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1s-a9-wNU">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <constraints>
@@ -496,6 +452,69 @@
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="mdQ-4i-9Nx"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" text="No has agregado mas ingredeintes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tbh-RS-t1w">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ingredientes_roja" translatesAutoresizingMaskIntoConstraints="NO" id="iNu-pM-Grp">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowCall" translatesAutoresizingMaskIntoConstraints="NO" id="rSK-xW-8mN">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="SVC-oJ-slh"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="SVC-oJ-slh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="SVC-oJ-slh"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTr-Bk-l02">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.30588235289999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="Hornear Ya!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" title="Hornear" image="horno">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="132" y="500" width="137" height="34"/>
+                                </variation>
+                                <connections>
+                                    <action selector="hornearBtn:" destination="p01-xI-FQQ" eventType="touchUpInside" id="cxk-m8-zPV"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puedes agregar + ingredientes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWb-TZ-dGj">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="py6-M2-2jq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="py6-M2-2jq"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="py6-M2-2jq"/>
                                     </mask>
                                 </variation>
                             </label>
@@ -559,6 +578,7 @@
                                 <exclude reference="yks-fj-6y8"/>
                                 <exclude reference="gIx-m2-Klo"/>
                                 <exclude reference="YAA-hc-Tt5"/>
+                                <exclude reference="N3y-hD-YII"/>
                                 <exclude reference="pWH-Bm-ttN"/>
                                 <exclude reference="DxW-bA-Ryb"/>
                                 <exclude reference="AcI-lK-pg1"/>
@@ -566,12 +586,12 @@
                                 <exclude reference="0wz-Rd-0Y3"/>
                                 <exclude reference="hHm-d8-Apl"/>
                                 <exclude reference="iEv-O5-IPz"/>
-                                <exclude reference="sWb-TZ-dGj"/>
+                                <exclude reference="e1s-a9-wNU"/>
                                 <exclude reference="Tbh-RS-t1w"/>
                                 <exclude reference="iNu-pM-Grp"/>
                                 <exclude reference="rSK-xW-8mN"/>
-                                <exclude reference="N3y-hD-YII"/>
-                                <exclude reference="e1s-a9-wNU"/>
+                                <exclude reference="nTr-Bk-l02"/>
+                                <exclude reference="sWb-TZ-dGj"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="EIC-Rg-UjY"/>
@@ -632,6 +652,7 @@
                                 <include reference="yks-fj-6y8"/>
                                 <include reference="gIx-m2-Klo"/>
                                 <include reference="YAA-hc-Tt5"/>
+                                <include reference="N3y-hD-YII"/>
                                 <include reference="pWH-Bm-ttN"/>
                                 <include reference="DxW-bA-Ryb"/>
                                 <include reference="AcI-lK-pg1"/>
@@ -639,12 +660,12 @@
                                 <include reference="0wz-Rd-0Y3"/>
                                 <include reference="hHm-d8-Apl"/>
                                 <include reference="iEv-O5-IPz"/>
-                                <include reference="sWb-TZ-dGj"/>
+                                <include reference="e1s-a9-wNU"/>
                                 <include reference="Tbh-RS-t1w"/>
                                 <include reference="iNu-pM-Grp"/>
                                 <include reference="rSK-xW-8mN"/>
-                                <include reference="N3y-hD-YII"/>
-                                <include reference="e1s-a9-wNU"/>
+                                <include reference="nTr-Bk-l02"/>
+                                <include reference="sWb-TZ-dGj"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="EIC-Rg-UjY"/>
@@ -703,6 +724,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="A Cocina" image="cocina" id="MLL-Xx-8vL"/>
                     <connections>
+                        <outlet property="hornearBtn" destination="nTr-Bk-l02" id="09c-86-zsZ"/>
                         <outlet property="masaLabel" destination="AcI-lK-pg1" id="svW-Nx-Fj1"/>
                         <outlet property="moreCall" destination="sWb-TZ-dGj" id="YXX-mq-CZq"/>
                         <outlet property="moreImage" destination="rSK-xW-8mN" id="fF0-px-Eb5"/>
@@ -1115,39 +1137,24 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Que queso le ponemos?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4Y-1s-uBe">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="aQS-8d-Xaz"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="aQS-8d-Xaz"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="aQS-8d-Xaz"/>
-                                    </mask>
-                                </variation>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tay-NS-dw9">
                                 <rect key="frame" x="0.0" y="-216" width="320" height="216"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="646" id="94d-bJ-y8u"/>
-                                    <constraint firstAttribute="height" constant="102" id="AEk-8g-ALm"/>
+                                    <constraint firstAttribute="height" constant="116" id="yuk-lZ-MUr"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="94d-bJ-y8u"/>
-                                        <exclude reference="AEk-8g-ALm"/>
+                                        <exclude reference="yuk-lZ-MUr"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="94d-bJ-y8u"/>
-                                        <include reference="AEk-8g-ALm"/>
+                                        <include reference="yuk-lZ-MUr"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -1158,19 +1165,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="o4Y-1s-uBe" firstAttribute="centerX" secondItem="EIb-Z0-f2r" secondAttribute="centerX" id="8yf-cb-2Qo"/>
                             <constraint firstItem="pL0-eM-u7U" firstAttribute="top" secondItem="EIb-Z0-f2r" secondAttribute="bottom" constant="-327" id="97V-LC-lYI"/>
-                            <constraint firstItem="xfG-IX-GdC" firstAttribute="top" secondItem="tay-NS-dw9" secondAttribute="bottom" constant="48" id="AIt-zB-SHP"/>
-                            <constraint firstItem="o4Y-1s-uBe" firstAttribute="centerX" secondItem="tay-NS-dw9" secondAttribute="centerX" id="CTa-wr-RnS"/>
                             <constraint firstItem="pL0-eM-u7U" firstAttribute="top" secondItem="fCk-xf-zeL" secondAttribute="topMargin" id="EGJ-xe-GYN"/>
-                            <constraint firstItem="tay-NS-dw9" firstAttribute="top" secondItem="o4Y-1s-uBe" secondAttribute="bottom" constant="24" id="arh-gz-TkJ"/>
-                            <constraint firstItem="EIb-Z0-f2r" firstAttribute="centerX" secondItem="o4Y-1s-uBe" secondAttribute="centerX" id="hg5-Hd-3fk"/>
+                            <constraint firstItem="o4Y-1s-uBe" firstAttribute="top" secondItem="EIb-Z0-f2r" secondAttribute="bottom" constant="25" id="Wt8-He-TnS"/>
+                            <constraint firstItem="tay-NS-dw9" firstAttribute="centerX" secondItem="o4Y-1s-uBe" secondAttribute="centerX" id="iKH-F7-t8O"/>
                             <constraint firstItem="EIb-Z0-f2r" firstAttribute="top" secondItem="c7h-wm-6Ha" secondAttribute="bottom" constant="33" id="iXD-zz-bCH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pL0-eM-u7U" secondAttribute="trailing" constant="-20" id="lpF-9J-be3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EIb-Z0-f2r" secondAttribute="trailing" constant="-10" id="mVg-dV-2QZ"/>
                             <constraint firstItem="pL0-eM-u7U" firstAttribute="leading" secondItem="fCk-xf-zeL" secondAttribute="leadingMargin" constant="-20" id="o8I-R5-XTg"/>
                             <constraint firstItem="EIb-Z0-f2r" firstAttribute="leading" secondItem="fCk-xf-zeL" secondAttribute="leadingMargin" constant="-10" id="r1g-M2-rs0"/>
                             <constraint firstItem="pL0-eM-u7U" firstAttribute="bottom" secondItem="fCk-xf-zeL" secondAttribute="bottomMargin" id="t2Y-jk-Wcg"/>
-                            <constraint firstItem="o4Y-1s-uBe" firstAttribute="top" secondItem="EIb-Z0-f2r" secondAttribute="bottom" constant="25" id="zQ6-iB-Db3"/>
+                            <constraint firstItem="tay-NS-dw9" firstAttribute="top" secondItem="o4Y-1s-uBe" secondAttribute="bottom" constant="24" id="w3Q-J8-c0g"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -1185,14 +1191,13 @@
                                 <exclude reference="lpF-9J-be3"/>
                                 <exclude reference="o8I-R5-XTg"/>
                                 <exclude reference="t2Y-jk-Wcg"/>
-                                <exclude reference="hg5-Hd-3fk"/>
                                 <exclude reference="iXD-zz-bCH"/>
                                 <exclude reference="mVg-dV-2QZ"/>
                                 <exclude reference="r1g-M2-rs0"/>
-                                <exclude reference="CTa-wr-RnS"/>
-                                <exclude reference="zQ6-iB-Db3"/>
-                                <exclude reference="arh-gz-TkJ"/>
-                                <exclude reference="AIt-zB-SHP"/>
+                                <exclude reference="8yf-cb-2Qo"/>
+                                <exclude reference="Wt8-He-TnS"/>
+                                <exclude reference="iKH-F7-t8O"/>
+                                <exclude reference="w3Q-J8-c0g"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1208,14 +1213,13 @@
                                 <include reference="lpF-9J-be3"/>
                                 <include reference="o8I-R5-XTg"/>
                                 <include reference="t2Y-jk-Wcg"/>
-                                <include reference="hg5-Hd-3fk"/>
                                 <include reference="iXD-zz-bCH"/>
                                 <include reference="mVg-dV-2QZ"/>
                                 <include reference="r1g-M2-rs0"/>
-                                <include reference="CTa-wr-RnS"/>
-                                <include reference="zQ6-iB-Db3"/>
-                                <include reference="arh-gz-TkJ"/>
-                                <include reference="AIt-zB-SHP"/>
+                                <include reference="8yf-cb-2Qo"/>
+                                <include reference="Wt8-He-TnS"/>
+                                <include reference="iKH-F7-t8O"/>
+                                <include reference="w3Q-J8-c0g"/>
                             </mask>
                         </variation>
                     </view>
@@ -1256,6 +1260,7 @@
         <image name="arrowCall" width="32" height="32"/>
         <image name="background" width="375" height="667"/>
         <image name="cocina" width="32" height="32"/>
+        <image name="horno" width="32" height="32"/>
         <image name="ingredientes" width="32" height="32"/>
         <image name="ingredientes_roja" width="32" height="32"/>
         <image name="masa" width="32" height="32"/>
