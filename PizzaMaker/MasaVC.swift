@@ -12,7 +12,15 @@ class MasaVC: UIViewController {
     
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
 
+    @IBOutlet weak var masaSelector: UIStepper!
 
+    @IBOutlet weak var masaLabel: UILabel!
+    @IBAction func masaSelector(sender: UIStepper) {
+        print(sender.value)
+        self.masaLabel.text = MasaEnu(rawValue: Int(sender.value))?.description
+        appDelegate.nuevapizza.masa = MasaEnu(rawValue: Int(sender.value))!
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

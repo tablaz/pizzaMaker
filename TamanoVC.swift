@@ -33,6 +33,8 @@ class TamanoVC: UIViewController {
         }
         
         self.tamanoLabel.text = tamano.rawValue
+        
+        appDelegate.nuevapizza.tamano = tamano
 
     }
     

@@ -8,9 +8,11 @@
 
 import UIKit
 
-class QuesoVC: UIViewController {
+class QuesoVC: UIViewController , UIPickerViewDelegate, UIPickerViewDataSource {
     
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    
+    @IBOutlet var quesoPickerView: UIPickerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +24,29 @@ class QuesoVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+        
+    }
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        
+        return QuesoEnu.count.hashValue
+        
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return QuesoEnu(rawValue: row)?.description;
 
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        appDelegate.nuevapizza.queso = QuesoEnu(rawValue: row)!
+        
+    }
+    
+
+    
     /*
     // MARK: - Navigation
 

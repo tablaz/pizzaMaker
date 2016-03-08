@@ -18,22 +18,42 @@ enum TamanoEnu: String {
     }
 }
 
-enum MasaEnu : String{
-    case Delgada = "Chica"
-    case Crujiente = "Crujiente"
-    case Gruesa = "Gruesa"
+enum MasaEnu : Int{
+    case Delgada = 0
+    case Crujiente = 1
+    case Gruesa = 2
     init(){
         self = .Delgada
     }
+    static var count: Int { return MasaEnu.Gruesa.hashValue + 1}
+
+    var description: String {
+        switch self {
+        case .Delgada: return "Delgada"
+        case .Crujiente   : return "Crujiente"
+        case .Gruesa  : return "Gruesa"
+        }
+    }
+
 }
 
-enum QuesoEnu : String{
-    case Mozarela = "Mozarela"
-    case Cheddar = "Cheddar"
-    case Parmesano = "Parmesano"
-    case Sin = "Sin"
+enum QuesoEnu : Int{
+    case Mozarela = 0
+    case Cheddar = 1
+    case Parmesano = 2
+    case Sin = 3
     init(){
         self = .Mozarela
+    }
+    static var count: Int { return QuesoEnu.Sin.hashValue + 1}
+    
+    var description: String {
+        switch self {
+        case .Mozarela: return "Mozarela"
+        case .Cheddar   : return "Cheddar"
+        case .Parmesano  : return "Parmesano"
+        case .Sin  : return "Sin Queso"
+        }
     }
 }
 
@@ -49,6 +69,7 @@ enum IngredientesEnu : String{
     init(){
         self = .Pollo
     }
+    static var count: Int { return IngredientesEnu.Pollo.hashValue + 1}
 }
 
 class Pizza {
@@ -61,15 +82,13 @@ class Pizza {
     init( ){
         
     }
-    /*
-    init( tamano : TamanoEnu, masa : MasaEnu, queso : QuesoEnu, ingredientes: [IngredientesEnu]){
-        self.tamano = tamano
-        self.masa = masa
-        self.queso = queso
-        self.ingredientes = ingredientes
-        
+    func setingrediente (ingrediente : IngredientesEnu){
+        self.ingredientes.append(ingrediente)
     }
-     */
+    
+    func delIngrediente( ingrediente : IngredientesEnu){
+        self.ingredientes = self.ingredientes.filter( {$0 != ingrediente} )
+    }
     
 }
 
