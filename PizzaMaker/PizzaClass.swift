@@ -40,12 +40,10 @@ enum QuesoEnu : String{
 enum IngredientesEnu : String{
     case Jamon = "Jamón"
     case Pepperoni = "Pepperoni"
-    case Pavo = "Pavo"
-    case Salchicha = "Salchicha"
     case Aceituna = "Aceituna"
     case Cebolla = "Cebolla"
     case Pimiento = "Pimiento"
-    case Pina = "Pina"
+    case Pina = "Piña"
     case Anchoa = "Anchoa"
     case Pollo = "Pollo"
     init(){

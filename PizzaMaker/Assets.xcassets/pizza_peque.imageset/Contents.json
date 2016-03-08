@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Macaron.png",
+      "filename" : "Pizza_peque-1.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Macaron-1.png",
+      "filename" : "Pizza_peque.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Macaron-2.png",
+      "filename" : "Pizza_peque-2.png",
       "scale" : "3x"
     }
   ],
