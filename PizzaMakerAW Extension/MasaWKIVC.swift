@@ -18,7 +18,6 @@ class MasaWKIVC: WKInterfaceController {
 
     @IBOutlet var masaSlider: WKInterfaceSlider!
     @IBAction func masaSlider(value: Float) {
-        print(value)
         
         var masa : MasaEnu
         switch value {
