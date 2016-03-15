@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>PizzaMakerAW.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>8C1610771C975FED001C8C35</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8C954E531C8CA8C3003CA855</key>
 		<dict>
 			<key>primary</key>

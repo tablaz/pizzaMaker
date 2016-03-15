@@ -57,7 +57,7 @@ enum QuesoEnu : Int{
     }
 }
 
-enum IngredientesEnu : String{
+enum IngredientesEnu : String {
     case Jamon = "Jamón"
     case Pepperoni = "Pepperoni"
     case Aceituna = "Aceituna"
@@ -70,6 +70,8 @@ enum IngredientesEnu : String{
         self = .Pollo
     }
     static var count: Int { return IngredientesEnu.Pollo.hashValue + 1}
+    
+
 }
 
 class Pizza {
@@ -88,6 +90,16 @@ class Pizza {
     
     func delIngrediente( ingrediente : IngredientesEnu){
         self.ingredientes = self.ingredientes.filter( {$0 != ingrediente} )
+    }
+    
+    func ingredientesToString() -> String {
+        var ingredientesArray : [String] = []
+        for ingrediente in ingredientes {
+            ingredientesArray.append(ingrediente.rawValue)
+        }
+        
+        let stringList = ingredientesArray.joinWithSeparator(", ")
+        return stringList
     }
     
 }

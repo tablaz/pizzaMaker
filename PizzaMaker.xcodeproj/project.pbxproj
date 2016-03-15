@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C16107C1C975FED001C8C35 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C16107A1C975FED001C8C35 /* Interface.storyboard */; };
+		8C16107E1C975FED001C8C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C16107D1C975FED001C8C35 /* Assets.xcassets */; };
+		8C1610851C975FED001C8C35 /* PizzaMakerAW Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8C1610841C975FED001C8C35 /* PizzaMakerAW Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8C16108A1C975FED001C8C35 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1610891C975FED001C8C35 /* InterfaceController.swift */; };
+		8C16108C1C975FED001C8C35 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C16108B1C975FED001C8C35 /* ExtensionDelegate.swift */; };
+		8C16108E1C975FED001C8C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C16108D1C975FED001C8C35 /* Assets.xcassets */; };
+		8C1610921C975FED001C8C35 /* PizzaMakerAW.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8C1610781C975FED001C8C35 /* PizzaMakerAW.app */; };
+		8C16109C1C976856001C8C35 /* TamanoWKIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C16109B1C976856001C8C35 /* TamanoWKIVC.swift */; };
+		8C16109E1C976879001C8C35 /* MasaWKIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C16109D1C976879001C8C35 /* MasaWKIVC.swift */; };
+		8C1610A01C976887001C8C35 /* QuesoWKIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C16109F1C976887001C8C35 /* QuesoWKIVC.swift */; };
+		8C1610A21C976898001C8C35 /* OtrosWKIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1610A11C976898001C8C35 /* OtrosWKIVC.swift */; };
+		8C1610A41C9768AB001C8C35 /* HornoWKIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1610A31C9768AB001C8C35 /* HornoWKIVC.swift */; };
+		8C1610A51C976C5D001C8C35 /* PizzaClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C954E791C8D7848003CA855 /* PizzaClass.swift */; };
 		8C954E581C8CA8C3003CA855 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C954E571C8CA8C3003CA855 /* AppDelegate.swift */; };
 		8C954E611C8CA8C3003CA855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C954E601C8CA8C3003CA855 /* Assets.xcassets */; };
 		8C954E641C8CA8C3003CA855 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C954E621C8CA8C3003CA855 /* LaunchScreen.storyboard */; };
@@ -19,7 +32,63 @@
 		8CF338BF1C8E07D2004B68D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF338BE1C8E07D2004B68D1 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8C1610861C975FED001C8C35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C954E4C1C8CA8C3003CA855 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C1610831C975FED001C8C35;
+			remoteInfo = "PizzaMakerAW Extension";
+		};
+		8C1610901C975FED001C8C35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C954E4C1C8CA8C3003CA855 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C1610771C975FED001C8C35;
+			remoteInfo = PizzaMakerAW;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C1610981C975FED001C8C35 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8C1610851C975FED001C8C35 /* PizzaMakerAW Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C16109A1C975FED001C8C35 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8C1610921C975FED001C8C35 /* PizzaMakerAW.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8C1610781C975FED001C8C35 /* PizzaMakerAW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaMakerAW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C16107B1C975FED001C8C35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8C16107D1C975FED001C8C35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C16107F1C975FED001C8C35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C1610841C975FED001C8C35 /* PizzaMakerAW Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PizzaMakerAW Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C1610891C975FED001C8C35 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8C16108B1C975FED001C8C35 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8C16108D1C975FED001C8C35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C16108F1C975FED001C8C35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C16109B1C976856001C8C35 /* TamanoWKIVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TamanoWKIVC.swift; sourceTree = "<group>"; };
+		8C16109D1C976879001C8C35 /* MasaWKIVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasaWKIVC.swift; sourceTree = "<group>"; };
+		8C16109F1C976887001C8C35 /* QuesoWKIVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuesoWKIVC.swift; sourceTree = "<group>"; };
+		8C1610A11C976898001C8C35 /* OtrosWKIVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtrosWKIVC.swift; sourceTree = "<group>"; };
+		8C1610A31C9768AB001C8C35 /* HornoWKIVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HornoWKIVC.swift; sourceTree = "<group>"; };
 		8C954E541C8CA8C3003CA855 /* PizzaMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C954E571C8CA8C3003CA855 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C954E601C8CA8C3003CA855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,6 +104,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8C1610811C975FED001C8C35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C954E511C8CA8C3003CA855 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +121,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C1610791C975FED001C8C35 /* PizzaMakerAW */ = {
+			isa = PBXGroup;
+			children = (
+				8C16107A1C975FED001C8C35 /* Interface.storyboard */,
+				8C16107D1C975FED001C8C35 /* Assets.xcassets */,
+				8C16107F1C975FED001C8C35 /* Info.plist */,
+			);
+			path = PizzaMakerAW;
+			sourceTree = "<group>";
+		};
+		8C1610881C975FED001C8C35 /* PizzaMakerAW Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8C1610891C975FED001C8C35 /* InterfaceController.swift */,
+				8C16108B1C975FED001C8C35 /* ExtensionDelegate.swift */,
+				8C16108D1C975FED001C8C35 /* Assets.xcassets */,
+				8C16108F1C975FED001C8C35 /* Info.plist */,
+				8C16109B1C976856001C8C35 /* TamanoWKIVC.swift */,
+				8C16109D1C976879001C8C35 /* MasaWKIVC.swift */,
+				8C16109F1C976887001C8C35 /* QuesoWKIVC.swift */,
+				8C1610A11C976898001C8C35 /* OtrosWKIVC.swift */,
+				8C1610A31C9768AB001C8C35 /* HornoWKIVC.swift */,
+			);
+			path = "PizzaMakerAW Extension";
+			sourceTree = "<group>";
+		};
 		8C954E4B1C8CA8C3003CA855 = {
 			isa = PBXGroup;
 			children = (
 				8C954E561C8CA8C3003CA855 /* PizzaMaker */,
+				8C1610791C975FED001C8C35 /* PizzaMakerAW */,
+				8C1610881C975FED001C8C35 /* PizzaMakerAW Extension */,
 				8C954E551C8CA8C3003CA855 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				8C954E541C8CA8C3003CA855 /* PizzaMaker.app */,
+				8C1610781C975FED001C8C35 /* PizzaMakerAW.app */,
+				8C1610841C975FED001C8C35 /* PizzaMakerAW Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +188,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8C1610771C975FED001C8C35 /* PizzaMakerAW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C1610991C975FED001C8C35 /* Build configuration list for PBXNativeTarget "PizzaMakerAW" */;
+			buildPhases = (
+				8C1610761C975FED001C8C35 /* Resources */,
+				8C1610981C975FED001C8C35 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C1610871C975FED001C8C35 /* PBXTargetDependency */,
+			);
+			name = PizzaMakerAW;
+			productName = PizzaMakerAW;
+			productReference = 8C1610781C975FED001C8C35 /* PizzaMakerAW.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8C1610831C975FED001C8C35 /* PizzaMakerAW Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C1610971C975FED001C8C35 /* Build configuration list for PBXNativeTarget "PizzaMakerAW Extension" */;
+			buildPhases = (
+				8C1610801C975FED001C8C35 /* Sources */,
+				8C1610811C975FED001C8C35 /* Frameworks */,
+				8C1610821C975FED001C8C35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PizzaMakerAW Extension";
+			productName = "PizzaMakerAW Extension";
+			productReference = 8C1610841C975FED001C8C35 /* PizzaMakerAW Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		8C954E531C8CA8C3003CA855 /* PizzaMaker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C954E681C8CA8C3003CA855 /* Build configuration list for PBXNativeTarget "PizzaMaker" */;
@@ -89,10 +229,12 @@
 				8C954E501C8CA8C3003CA855 /* Sources */,
 				8C954E511C8CA8C3003CA855 /* Frameworks */,
 				8C954E521C8CA8C3003CA855 /* Resources */,
+				8C16109A1C975FED001C8C35 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8C1610911C975FED001C8C35 /* PBXTargetDependency */,
 			);
 			name = PizzaMaker;
 			productName = PizzaMaker;
@@ -109,8 +251,17 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Tablaz;
 				TargetAttributes = {
+					8C1610771C975FED001C8C35 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7QZT7WXKHC;
+					};
+					8C1610831C975FED001C8C35 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7QZT7WXKHC;
+					};
 					8C954E531C8CA8C3003CA855 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7QZT7WXKHC;
 					};
 				};
 			};
@@ -128,11 +279,30 @@
 			projectRoot = "";
 			targets = (
 				8C954E531C8CA8C3003CA855 /* PizzaMaker */,
+				8C1610771C975FED001C8C35 /* PizzaMakerAW */,
+				8C1610831C975FED001C8C35 /* PizzaMakerAW Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8C1610761C975FED001C8C35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C16107E1C975FED001C8C35 /* Assets.xcassets in Resources */,
+				8C16107C1C975FED001C8C35 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C1610821C975FED001C8C35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C16108E1C975FED001C8C35 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C954E521C8CA8C3003CA855 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,6 +316,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8C1610801C975FED001C8C35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C1610A21C976898001C8C35 /* OtrosWKIVC.swift in Sources */,
+				8C16109E1C976879001C8C35 /* MasaWKIVC.swift in Sources */,
+				8C16108C1C975FED001C8C35 /* ExtensionDelegate.swift in Sources */,
+				8C1610A41C9768AB001C8C35 /* HornoWKIVC.swift in Sources */,
+				8C16109C1C976856001C8C35 /* TamanoWKIVC.swift in Sources */,
+				8C1610A01C976887001C8C35 /* QuesoWKIVC.swift in Sources */,
+				8C16108A1C975FED001C8C35 /* InterfaceController.swift in Sources */,
+				8C1610A51C976C5D001C8C35 /* PizzaClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C954E501C8CA8C3003CA855 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,7 +347,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8C1610871C975FED001C8C35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C1610831C975FED001C8C35 /* PizzaMakerAW Extension */;
+			targetProxy = 8C1610861C975FED001C8C35 /* PBXContainerItemProxy */;
+		};
+		8C1610911C975FED001C8C35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C1610771C975FED001C8C35 /* PizzaMakerAW */;
+			targetProxy = 8C1610901C975FED001C8C35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		8C16107A1C975FED001C8C35 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C16107B1C975FED001C8C35 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		8C954E621C8CA8C3003CA855 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -174,6 +380,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8C1610931C975FED001C8C35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PizzaMakerAW_Extension;
+				INFOPLIST_FILE = PizzaMakerAW/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tablaz.PizzaMaker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		8C1610941C975FED001C8C35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PizzaMakerAW_Extension;
+				INFOPLIST_FILE = PizzaMakerAW/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tablaz.PizzaMaker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		8C1610951C975FED001C8C35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PizzaMakerAW Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tablaz.PizzaMaker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		8C1610961C975FED001C8C35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PizzaMakerAW Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tablaz.PizzaMaker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 		8C954E661C8CA8C3003CA855 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -282,6 +550,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8C1610971C975FED001C8C35 /* Build configuration list for PBXNativeTarget "PizzaMakerAW Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C1610951C975FED001C8C35 /* Debug */,
+				8C1610961C975FED001C8C35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8C1610991C975FED001C8C35 /* Build configuration list for PBXNativeTarget "PizzaMakerAW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C1610931C975FED001C8C35 /* Debug */,
+				8C1610941C975FED001C8C35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		8C954E4F1C8CA8C3003CA855 /* Build configuration list for PBXProject "PizzaMaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
